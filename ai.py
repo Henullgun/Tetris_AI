@@ -51,7 +51,7 @@ class DQNAgent:
         self.avg_q_max, self.avg_loss = 0, 0
         
         if self.load_model:
-            self.model.load_weights("./save_model/breakout_dqn_1.h5")
+            self.model.load_weights("save_model/breakout_dqn_1.h5")
 
     # Huber Loss를 이용하기 위해 최적화 함수를 직접 정의
     def optimizer(self):
